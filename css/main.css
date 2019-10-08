@@ -1,0 +1,290 @@
+body {
+  font-weight: normal;
+  line-height: 1.6;
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.inner {
+  max-width: 1500px;
+  padding: 100px 0 70px;
+  margin: 0 auto;
+  width: 86%;
+}
+
+@media (max-width: 550px) {
+  .inner {
+    padding: 60px 0;
+    width: 93%;
+  }
+}
+
+.first-view {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.first-view .box1 {
+  background-color: #800000;
+  width: 60%;
+  height: 73%;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.first-view .fv-img {
+  background-image: url(../img/tonkatsu.png);
+  width: 75%;
+  height: 95%;
+  z-index: 1;
+  position: absolute;
+  right: 84px;
+  top: -84px;
+}
+
+.fv-title {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  color: #fff;
+  padding: 116px 197px 0;
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.fv-title .shop {
+  font-size: 16px;
+  letter-spacing: 0.5em;
+}
+
+.fv-title .shop-name {
+  font-size: 40px;
+  letter-spacing: 1em;
+}
+
+.fv-btn {
+  margin-top: 150px;
+  position: fixed;
+  display: block;
+  z-index: 1;
+  width: 86px;
+  height: 261px;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  letter-spacing: 0.5em;
+  background: -webkit-gradient(linear, left top, left bottom, from(#BF0000), color-stop(#641616), color-stop(#3D0202), to(#390000));
+  background: linear-gradient(#BF0000, #641616, #3D0202, #390000);
+  color: #fff;
+  padding: 5px;
+  border: solid 5px #800000;
+  -webkit-box-shadow: 0px 0px 0px 1px #ffffff inset;
+          box-shadow: 0px 0px 0px 1px #ffffff inset;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Sawarabi Mincho", sans-serif;
+  cursor: pointer;
+  padding-left: 22px;
+}
+
+.kodawari {
+  background-color: black;
+  height: 120vh;
+}
+
+.title {
+  font-family: "Sawarabi Mincho", sans-serif;
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.title:before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  display: inline-block;
+  width: 78px;
+  height: 1px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.slide-container {
+  height: 202px;
+  width: 876px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#wrapper {
+  position: relative;
+  height: 347px;
+  width: 876px;
+  overflow: hidden;
+}
+
+#wrapper .slide-item {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 1s linear, -webkit-transform 6.5s linear;
+  transition: all 1s linear, -webkit-transform 6.5s linear;
+  transition: all 1s linear, transform 6.5s linear;
+  transition: all 1s linear, transform 6.5s linear, -webkit-transform 6.5s linear;
+}
+
+#wrapper .slide-item.active {
+  opacity: 1;
+}
+
+#wrapper .slide-item.zoom {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.box2 {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #800000;
+}
+
+.box2 .kodawari-text {
+  padding: 231px 130px 75px;
+  color: #fff;
+  line-height: 2em;
+  font-size: 20px;
+  font-family: "Sawarabi Mincho", sans-serif;
+}
+
+.menu {
+  background-color: black;
+  height: 150vh;
+}
+
+.menu .menu-text {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 70px;
+}
+
+.menu-image {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu-image .img1 {
+  background-image: url(../img/menu1.png);
+  background-size: cover;
+  width: 659px;
+  height: 420px;
+}
+
+.menu-image .img2 {
+  background-image: url(../img/menu4.png);
+  background-size: cover;
+  width: 419px;
+  height: 420px;
+}
+
+.menu-image .img3 {
+  background-image: url(../img/menu2.png);
+  background-size: cover;
+  width: 743px;
+  height: 340px;
+  margin-top: 20px;
+}
+
+.menu-image .img4 {
+  background-image: url(../img/menu3.png);
+  margin-top: 20px;
+  background-size: cover;
+  width: 333px;
+  height: 340px;
+}
+
+.access {
+  background-color: black;
+  height: 100vh;
+  padding: 100px 0;
+}
+
+.access-content {
+  position: relative;
+}
+
+.access-content .box3 {
+  background-color: #800000;
+  width: 982px;
+  padding: 150px 630px 97px 86px;
+  line-height: 1.5em;
+  color: #fff;
+  margin-top: 150px;
+}
+
+.map {
+  background-image: url(../img/map.16.53.58.png);
+  background-size: cover;
+  width: 880px;
+  height: 314px;
+  z-index: 1;
+  position: absolute;
+  top: -76px;
+  right: -0;
+}
+
+.bottom-wrap {
+  background-color: black;
+  height: 270px;
+  color: #fff;
+}
+
+.bottom-wrap .bottom-line {
+  display: inline-block;
+  border: 1px solid #fff;
+  width: 100%;
+}
+
+.bottom-wrap footer {
+  margin-top: 68.5px;
+  text-align: center;
+  font-size: 18px;
+}
+/*# sourceMappingURL=main.css.map */

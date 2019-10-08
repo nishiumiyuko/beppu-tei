@@ -1,0 +1,16 @@
+.bottom-wrap {
+    background-color: $color1;
+    height: 270px;
+    color: $color3;
+
+    .bottom-line {
+    display: inline-block;
+    border: 1px solid $color3;
+    width: 100%;
+    }
+    footer {
+        margin-top: 68.5px;
+        text-align: center;
+        font-size: 18px;
+    }
+}

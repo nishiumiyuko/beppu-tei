@@ -1,0 +1,44 @@
+.menu {
+    background-color: $color1;
+    height: 150vh;
+    .menu-text {
+        color: $color3;
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+    }
+}
+
+.menu-image {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .img1 {
+        background-image: url(../img/menu1.png);
+        background-size: cover;
+        width: 659px;
+        height: 420px;
+    }
+    .img2 {
+        background-image: url(../img/menu4.png);
+        background-size: cover;
+        width: 419px;
+        height: 420px;
+
+    }
+    .img3 {
+        background-image: url(../img/menu2.png);
+        background-size: cover;
+        width: 743px;
+        height: 340px;
+        margin-top: 20px;
+    }
+    .img4 {
+        background-image: url(../img/menu3.png);
+        margin-top: 20px;
+        background-size: cover;
+        width: 333px;
+        height: 340px;
+    }
+}
