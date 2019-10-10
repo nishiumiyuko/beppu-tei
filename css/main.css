@@ -23,48 +23,60 @@ body {
   background-color: black;
   width: 100%;
   height: 100vh;
-  position: relative;
 }
 
-.first-view .box1 {
+.first-view .fv-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.fv-first {
+  width: 40%;
+}
+
+.fv-first .fv-title {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  color: #fff;
+  padding: 116px 153px 0;
+  font-family: 'Sawarabi Mincho', sans-serif;
+}
+
+.fv-first .fv-title .shop {
+  font-size: 16px;
+  letter-spacing: 0.5em;
+}
+
+.fv-first .fv-title .shop-name {
+  font-size: 40px;
+  letter-spacing: 1em;
+}
+
+.fv-second {
   background-color: #800000;
   width: 60%;
   height: 73%;
   position: absolute;
   right: 0;
+  top: 0;
   z-index: 1;
 }
 
-.first-view .fv-img {
+.fv-second .fv-img {
   background-image: url(../img/tonkatsu2.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  width: 65%;
-  height: 95%;
+  width: 100%;
+  height: 100%;
   z-index: 1;
   position: absolute;
   right: 84px;
   top: 65px;
-}
-
-.fv-title {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  color: #fff;
-  padding: 116px 185px 0;
-  width: 35%;
-  font-family: 'Sawarabi Mincho', sans-serif;
-}
-
-.fv-title .shop {
-  font-size: 16px;
-  letter-spacing: 0.5em;
-}
-
-.fv-title .shop-name {
-  font-size: 40px;
-  letter-spacing: 1em;
 }
 
 .fv-btn {
