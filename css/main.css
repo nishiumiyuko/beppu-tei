@@ -36,13 +36,15 @@ body {
 }
 
 .first-view .fv-img {
-  background-image: url(../img/tonkatsu.png);
-  width: 75%;
+  background-image: url(../img/tonkatsu2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 65%;
   height: 95%;
   z-index: 1;
   position: absolute;
   right: 84px;
-  top: -84px;
+  top: 65px;
 }
 
 .fv-title {
@@ -50,7 +52,8 @@ body {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   color: #fff;
-  padding: 116px 197px 0;
+  padding: 116px 185px 0;
+  width: 35%;
   font-family: 'Sawarabi Mincho', sans-serif;
 }
 
