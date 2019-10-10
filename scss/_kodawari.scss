@@ -26,12 +26,19 @@
     border-radius: 2px;
     }
 }
+.slide {
+    position: relative;
+    height: 600px;;
+}
+
 .slide-container {
-    height: 202px;
-    width: 876px;
-    margin: 0 auto;
+    // height: 202px;
+    // width: 876px;
+    margin: 70px auto 0;
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 1;
 }
 #wrapper {
     position: relative;
@@ -65,6 +72,9 @@ img {
     width: 100%;
     margin: 0 auto;
     background-color: $color2;
+    position: absolute;
+    top: 173px;
+    // z-index: 1;
     .kodawari-text {
         padding: 231px 130px 75px;
         color: $color3;
