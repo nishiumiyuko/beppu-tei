@@ -92,7 +92,6 @@ body {
 
 .kodawari {
   background-color: black;
-  height: 120vh;
 }
 
 .title {
@@ -190,7 +189,6 @@ img {
 
 .menu {
   background-color: black;
-  height: 168vh;
 }
 
 .menu .menu-text {
@@ -206,6 +204,7 @@ img {
 
 .menu-image {
   margin-top: 60px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,7 +247,6 @@ img {
 
 .access {
   background-color: black;
-  height: 100vh;
   padding: 100px 0;
 }
 
